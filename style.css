@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1627037558426-c2d07beda3af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=975&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav{
+    position: fixed;
+    top: 0%;
+}
+nav ul li {
+    position: relative;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 40px;
+      
+}
+nav ul li:before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: -2px;
+    
+    
+}
+nav ul li:hover:before{
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 39px;
+    text-transform: capitalize;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 39px;
+    text-transform: capitalize;
+}
+#board{
+    background:linear-gradient(rgb(163, 250, 163),rgb(181, 179, 179));
+    height: 90vh;
+    width: 50vw;
+    border: 2px solid white ;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background:linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius:9px ;
+}
+.snake{
+    background-color:purple ;
+    border: .25px solid black ;
+    border-radius:8px ;
+
+}
+.food{
+    background: linear-gradient(rgb(202, 57, 57),rgb(134, 62, 134));
+    border: .25px solid black ;
+    border-radius:8px ;
+}
+
+div{
+    display: grid;
+}
+
+.button{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    position: absolute;
+    left: 5%;
+    top: 24%;
+}
+.key{
+    width: 70px;
+    height: 29px;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+
+    
+}
+#up{
+    position: absolute;
+    top: 0%;
+}
+#down{
+    position: absolute;
+    bottom: 0%;
+}
+#left{
+    position: absolute;
+    left: 0%;
+}
+#right{
+    position: absolute;
+    right: 0%;
+}
+@media only screen and (max-width: 990px) {
+    #board{
+        background:linear-gradient(rgb(163, 250, 163),rgb(181, 179, 179));
+        height: 70vh;
+        width: 90vw;
+        margin-right: 0.5vw;
+        margin-bottom: 15vh;
+        border: 2px solid white ;
+        grid-template-rows: repeat(18,1fr);
+        grid-template-columns: repeat(18,1fr);
+    }
+
+    .button{
+        width: 50vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        position: absolute;
+        top: 80%;
+        left: 20%;
+
+        
+        
+    }
+
+    #scoreBox{
+        position: absolute;
+        top: 28px;
+        right: 50px;
+        font-size: 19px;
+        text-transform: capitalize;
+    }
+    #hiscoreBox{
+        position: absolute;
+        top: 28px;
+        left: 50px;
+        font-size: 19px;
+        text-transform: capitalize;
+    }
+  }
