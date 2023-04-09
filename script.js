@@ -1,9 +1,9 @@
 // game constants and variables
 let inputDir = { x: 0, y: 0 }
-const foodsound = new Audio('./media/food.mp3')
-const gameoversound = new Audio('./media/gameover.mp3')
-const movesound = new Audio('./media/move.mp3')
-const musicsound = new Audio('./media/music.mp3')
+const foodsound = new Audio('food.mp3')
+const gameoversound = new Audio('gameover.mp3')
+const movesound = new Audio('move.mp3')
+const musicsound = new Audio('music.mp3')
 let speed = 5;
 let score = 0;
 let lastPaintTime = 0;
